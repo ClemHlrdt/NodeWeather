@@ -19,7 +19,7 @@ function getWeather(tab){
   try {
     //Connect to the API
     const url = `https://api.openweathermap.org/data/2.5/weather?zip=${tab[0]},${tab[1]}&APPID=${api.key}`;
-    console.log(url);
+    //console.log(url);
     const request = https.get(url, response => {
                     //console.log(url);
                     if(response.statusCode === 200){
